@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>7.1 Acid & Bases — Ionic Equilibrium</title>
+
+    <meta
+        name="description"
+        content="Learn acid and base theories, conjugate acid-base pairs, pH, salt hydrolysis, and buffers."
+    >
+
+    <!--
+        The page is inside /pages/,
+        so we need ../ to reach the main stylesheet.
+    -->
+    <link rel="stylesheet" href="../style.css">
+
+</head>
+
+
+<body>
+
+    <!-- =====================================
+         HEADER
+    ====================================== -->
+
+    <header class="site-header">
+
+        <div class="header-container">
+
+            <a href="../index.html" class="brand">
+
+                <div class="brand-icon">
+                    ⚗
+                </div>
+
+                <div class="brand-text">
+
+                    <span class="brand-title">
+                        Ionic Equilibrium
+                    </span>
+
+                    <span class="brand-subtitle">
+                        Interactive Chemistry Laboratory
+                    </span>
+
+                </div>
+
+            </a>
+
+
+            <button
+                class="mobile-menu-button"
+                id="mobileMenuButton"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+            >
+                ☰
+            </button>
+
+
+            <nav
+                class="main-navigation"
+                id="mainNavigation"
+            >
+
+                <a
+                    href="../index.html"
+                    class="nav-link"
+                >
+                    Home
+                </a>
+
+                <a
+                    href="acid-bases.html"
+                    class="nav-link active"
+                >
+                    7.1 Acid &amp; Bases
+                </a>
+
+                <a
+                    href="../index.html#titration"
+                    class="nav-link"
+                >
+                    7.2 Titration
+                </a>
+
+                <a
+                    href="../index.html#solubility"
+                    class="nav-link"
+                >
+                    7.3 Solubility
+                </a>
+
+                <a
+                    href="../index.html#practice"
+                    class="nav-link"
+                >
+                    Practice
+                </a>
+
+                <a
+                    href="../index.html#progress"
+                    class="nav-link"
+                >
+                    Progress
+                </a>
+
+                <a
+                    href="../index.html#tutor"
+                    class="nav-link"
+                >
+                    AI Tutor
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- =====================================
+         MAIN CONTENT
+    ====================================== -->
+
+    <main>
+
+
+        <!-- =================================
+             MODULE HERO
+        ================================== -->
+
+        <section class="module-page-hero">
+
+            <div class="section-container">
+
+                <a
+                    href="../index.html"
+                    class="back-link"
+                >
+                    ← Back to Ionic Equilibrium
+                </a>
+
+
+                <div class="module-page-heading">
+
+                    <div>
+
+                        <span class="section-label">
+                            MODULE 7.1
+                        </span>
+
+                        <h1>
+                            Acid &amp; Bases
+                        </h1>
+
+                        <p>
+                            Explore acid–base theories, conjugate pairs,
+                            pH, salt hydrolysis, and buffer systems.
+                        </p>
+
+                    </div>
+
+
+                    <div class="module-symbol acid-page-symbol">
+                        H⁺
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================
+             LEARNING OUTCOMES
+        ================================== -->
+
+        <section class="learning-outcomes-section">
+
+            <div class="section-container">
+
+                <div class="section-heading">
+
+                    <span class="section-label">
+                        LEARNING OUTCOMES
+                    </span>
+
+                    <h2>
+                        What You Will Learn
+                    </h2>
+
+                    <p>
+                        By the end of this module, you should be able to:
+                    </p>
+
+                </div>
+
+
+                <div class="outcomes-grid">
+
+                    <article class="outcome-card">
+
+                        <span class="outcome-number">
+                            01
+                        </span>
+
+                        <h3>
+                            Acid–Base Theories
+                        </h3>
+
+                        <p>
+                            Define acids and bases according to
+                            Arrhenius and Brønsted–Lowry theories.
+                        </p>
+
+                    </article>
+
+
+                    <article class="outcome-card">
+
+                        <span class="outcome-number">
+                            02
+                        </span>
+
+                        <h3>
+                            Conjugate Pairs
+                        </h3>
+
+                        <p>
+                            Identify conjugate acid–base pairs
+                            using the Brønsted–Lowry model.
+                        </p>
+
+                    </article>
+
+
+                    <article class="outcome-card">
+
+                        <span class="outcome-number">
+                            03
+                        </span>
+
+                        <h3>
+                            pH &amp; Equilibrium
+                        </h3>
+
+                        <p>
+                            Calculate pH and equilibrium concentrations
+                            for strong and weak acids and bases.
+                        </p>
+
+                    </article>
+
+
+                    <article class="outcome-card">
+
+                        <span class="outcome-number">
+                            04
+                        </span>
+
+                        <h3>
+                            Degree of Dissociation
+                        </h3>
+
+                        <p>
+                            Calculate dissociation, equilibrium
+                            concentrations, and percentage dissociation.
+                        </p>
+
+                    </article>
+
+
+                    <article class="outcome-card">
+
+                        <span class="outcome-number">
+                            05
+                        </span>
+
+                        <h3>
+                            Salt Hydrolysis
+                        </h3>
+
+                        <p>
+                            Explain hydrolysis for salts formed from
+                            strong and weak acids and bases.
+                        </p>
+
+                    </article>
+
+
+                    <article class="outcome-card">
+
+                        <span class="outcome-number">
+                            06
+                        </span>
+
+                        <h3>
+                            Buffer Systems
+                        </h3>
+
+                        <p>
+                            Explain how buffers resist changes in pH
+                            and apply the Henderson–Hasselbalch equation.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================
+             LEARN SECTION
+        ================================== -->
+
+        <section class="learn-section">
+
+            <div class="section-container">
+
+                <div class="section-heading">
+
+                    <span class="section-label">
+                        LEARN
+                    </span>
+
+                    <h2>
+                        Core Concepts
+                    </h2>
+
+                    <p>
+                        Build the foundation before moving into
+                        calculations and laboratory simulations.
+                    </p>
+
+                </div>
+
+
+                <div class="concept-grid">
+
+
+                    <!-- ARRHENIUS -->
+
+                    <article class="concept-card">
+
+                        <div class="concept-number">
+                            01
+                        </div>
+
+                        <h3>
+                            Arrhenius Acids &amp; Bases
+                        </h3>
+
+                        <p>
+                            An Arrhenius acid increases the concentration
+                            of hydrogen ions in aqueous solution.
+                        </p>
+
+                        <div class="equation-box">
+
+                            HCl → H⁺ + Cl⁻
+
+                        </div>
+
+                        <p>
+                            An Arrhenius base increases the concentration
+                            of hydroxide ions in aqueous solution.
+                        </p>
+
+                        <div class="equation-box">
+
+                            NaOH → Na⁺ + OH⁻
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- BRONSTED -->
+
+                    <article class="concept-card">
+
+                        <div class="concept-number">
+                            02
+                        </div>
+
+                        <h3>
+                            Brønsted–Lowry Theory
+                        </h3>
+
+                        <p>
+                            A Brønsted–Lowry acid is a proton donor,
+                            while a Brønsted–Lowry base is a proton acceptor.
+                        </p>
+
+                        <div class="equation-box">
+
+                            NH₃ + H₂O ⇌ NH₄⁺ + OH⁻
+
+                        </div>
+
+                        <p>
+                            In this reaction, NH₃ accepts a proton
+                            and H₂O donates a proton.
+                        </p>
+
+                    </article>
+
+
+                    <!-- CONJUGATES -->
+
+                    <article class="concept-card">
+
+                        <div class="concept-number">
+                            03
+                        </div>
+
+                        <h3>
+                            Conjugate Acid–Base Pairs
+                        </h3>
+
+                        <p>
+                            A conjugate acid–base pair differs by
+                            one proton, H⁺.
+                        </p>
+
+                        <div class="equation-box">
+
+                            HA ⇌ H⁺ + A⁻
+
+                        </div>
+
+                        <div class="pair-display">
+
+                            <span>HA</span>
+
+                            <span class="pair-arrow">
+                                ⇌
+                            </span>
+
+                            <span>A⁻</span>
+
+                        </div>
+
+                        <p>
+                            HA is the acid and A⁻ is its conjugate base.
+                        </p>
+
+                    </article>
+
+
+                    <!-- STRONG / WEAK -->
+
+                    <article class="concept-card">
+
+                        <div class="concept-number">
+                            04
+                        </div>
+
+                        <h3>
+                            Strong &amp; Weak Acids
+                        </h3>
+
+                        <p>
+                            Strong acids ionise essentially completely
+                            in aqueous solution.
+                        </p>
+
+                        <div class="equation-box">
+
+                            HCl → H⁺ + Cl⁻
+
+                        </div>
+
+                        <p>
+                            Weak acids establish an equilibrium between
+                            the undissociated acid and its ions.
+                        </p>
+
+                        <div class="equation-box">
+
+                            CH₃COOH ⇌ H⁺ + CH₃COO⁻
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- WEAK BASE -->
+
+                    <article class="concept-card">
+
+                        <div class="concept-number">
+                            05
+                        </div>
+
+                        <h3>
+                            Strong &amp; Weak Bases
+                        </h3>
+
+                        <p>
+                            Strong bases dissociate extensively in water,
+                            while weak bases establish an equilibrium.
+                        </p>
+
+                        <div class="equation-box">
+
+                            NH₃ + H₂O ⇌ NH₄⁺ + OH⁻
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- KA -->
+
+                    <article class="concept-card">
+
+                        <div class="concept-number">
+                            06
+                        </div>
+
+                        <h3>
+                            Acid Dissociation Constant
+                        </h3>
+
+                        <p>
+                            The acid dissociation constant describes
+                            the equilibrium position of a weak acid.
+                        </p>
+
+                        <div class="equation-box">
+
+                            Kₐ =
+                            [H⁺][A⁻]
+                            /
+                            [HA]
+
+                        </div>
+
+                        <p>
+                            A larger Kₐ generally indicates a stronger
+                            weak acid.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================
+             EXPLORE
+        ================================== -->
+
+        <section class="explore-section">
+
+            <div class="section-container">
+
+                <div class="section-heading">
+
+                    <span class="section-label">
+                        EXPLORE
+                    </span>
+
+                    <h2>
+                        Interactive Exploration
+                    </h2>
+
+                    <p>
+                        Interactive activities will allow you to
+                        investigate acid–base behaviour.
+                    </p>
+
+                </div>
+
+
+                <div class="explore-grid">
+
+                    <article class="explore-card">
+
+                        <div class="explore-icon">
+                            pH
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                pH Scale Explorer
+                            </h3>
+
+                            <p>
+                                Explore the relationship between
+                                hydrogen-ion concentration and pH.
+                            </p>
+
+                            <span class="status-badge">
+                                NEXT STAGE
+                            </span>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="explore-card">
+
+                        <div class="explore-icon">
+                            HA
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Acid Dissociation
+                            </h3>
+
+                            <p>
+                                Visualise strong and weak acid
+                                dissociation in aqueous solution.
+                            </p>
+
+                            <span class="status-badge">
+                                NEXT STAGE
+                            </span>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="explore-card">
+
+                        <div class="explore-icon">
+                            ⇌
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Equilibrium Explorer
+                            </h3>
+
+                            <p>
+                                Investigate how equilibrium concentrations
+                                change as conditions change.
+                            </p>
+
+                            <span class="status-badge">
+                                NEXT STAGE
+                            </span>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================
+             VIRTUAL LAB PREVIEW
+        ================================== -->
+
+        <section class="lab-preview-section">
+
+            <div class="section-container">
+
+                <div class="lab-preview">
+
+                    <div class="lab-preview-content">
+
+                        <span class="section-label">
+                            VIRTUAL LAB
+                        </span>
+
+                        <h2>
+                            Acid–Base Laboratory
+                        </h2>
+
+                        <p>
+                            Perform virtual experiments using laboratory
+                            equipment such as beakers, conical flasks,
+                            pipettes, pH meters, and magnetic stirrers.
+                        </p>
+
+                        <button
+                            class="button button-primary"
+                            id="openLabButton"
+                        >
+                            Open Virtual Lab
+                            <span>→</span>
+                        </button>
+
+                    </div>
+
+
+                    <div class="lab-preview-visual">
+
+                        <div class="lab-equipment">
+
+                            <div class="beaker">
+                                <div class="liquid"></div>
+                            </div>
+
+                            <div class="ph-meter">
+
+                                <div class="ph-screen">
+                                    pH
+                                </div>
+
+                                <div class="ph-probe"></div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================
+             CALCULATIONS PREVIEW
+        ================================== -->
+
+        <section class="calculation-preview-section">
+
+            <div class="section-container">
+
+                <div class="section-heading">
+
+                    <span class="section-label">
+                        CALCULATIONS
+                    </span>
+
+                    <h2>
+                        Chemistry Calculation Tools
+                    </h2>
+
+                    <p>
+                        The calculation engine will be added separately
+                        and will provide step-by-step chemistry calculations.
+                    </p>
+
+                </div>
+
+
+                <div class="calculation-tools-grid">
+
+                    <div class="calculation-tool-card">
+
+                        <span class="tool-symbol">
+                            pH
+                        </span>
+
+                        <h3>
+                            Strong Acid / Base pH
+                        </h3>
+
+                        <p>
+                            Calculate pH and pOH from concentration.
+                        </p>
+
+                        <span class="status-badge">
+                            STEP 3
+                        </span>
+
+                    </div>
+
+
+                    <div class="calculation-tool-card">
+
+                        <span class="tool-symbol">
+                            Kₐ
+                        </span>
+
+                        <h3>
+                            Weak Acid
+                        </h3>
+
+                        <p>
+                            Calculate equilibrium concentrations,
+                            pH, and degree of dissociation.
+                        </p>
+
+                        <span class="status-badge">
+                            STEP 3
+                        </span>
+
+                    </div>
+
+
+                    <div class="calculation-tool-card">
+
+                        <span class="tool-symbol">
+                            Kᵦ
+                        </span>
+
+                        <h3>
+                            Weak Base
+                        </h3>
+
+                        <p>
+                            Calculate hydroxide concentration,
+                            pOH, pH, and dissociation.
+                        </p>
+
+                        <span class="status-badge">
+                            STEP 3
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================
+             PRACTICE PREVIEW
+        ================================== -->
+
+        <section class="practice-preview-section">
+
+            <div class="section-container">
+
+                <div class="practice-preview">
+
+                    <div>
+
+                        <span class="section-label">
+                            PRACTICE
+                        </span>
+
+                        <h2>
+                            Test Your Understanding
+                        </h2>
+
+                        <p>
+                            Practice questions linked directly to
+                            the learning outcomes will be added later.
+                        </p>
+
+                    </div>
+
+                    <div class="practice-preview-icon">
+                        ✓
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =====================================
+         FOOTER
+    ====================================== -->
+
+    <footer class="site-footer">
+
+        <div class="footer-container">
+
+            <div>
+
+                <strong>
+                    Ionic Equilibrium
+                </strong>
+
+                <p>
+                    Interactive Chemistry Laboratory
+                </p>
+
+            </div>
+
+            <div class="footer-note">
+                Module 7.1 — Acid &amp; Bases
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- PAGE JAVASCRIPT -->
+
+    <script>
+
+        /* Mobile navigation */
+
+        const mobileMenuButton =
+            document.getElementById("mobileMenuButton");
+
+        const mainNavigation =
+            document.getElementById("mainNavigation");
+
+
+        if (mobileMenuButton && mainNavigation) {
+
+            mobileMenuButton.addEventListener(
+                "click",
+                () => {
+
+                    const isOpen =
+                        mainNavigation.classList.toggle("open");
+
+                    mobileMenuButton.setAttribute(
+                        "aria-expanded",
+                        String(isOpen)
+                    );
+
+                    mobileMenuButton.textContent =
+                        isOpen ? "✕" : "☰";
+
+                }
+            );
+
+        }
+
+
+        /* Temporary virtual lab message */
+
+        const openLabButton =
+            document.getElementById("openLabButton");
+
+
+        if (openLabButton) {
+
+            openLabButton.addEventListener(
+                "click",
+                () => {
+
+                    alert(
+                        "The Acid–Base Virtual Laboratory will be implemented in the next laboratory stage."
+                    );
+
+                }
+            );
+
+        }
+
+    </script>
+
+</body>
+
+</html>
