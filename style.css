@@ -268,12 +268,14 @@ a {
     align-items: center;
 
     gap: 60px;
+
+    overflow: visible;
 }
 
 .hero-content {
     padding: 80px 0;
+    min-width: 0;
 }
-
 .hero-content h1 {
     margin-top: 16px;
 
@@ -340,7 +342,7 @@ a {
 
 .button-primary {
     background: var(--primary);
-    color: white;
+    color: #ffffff;
 
     box-shadow: var(--shadow-small);
 }
