@@ -1,0 +1,517 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ionic Equilibrium — Interactive Chemistry Laboratory</title>
+
+    <meta
+        name="description"
+        content="An interactive chemistry learning platform for Ionic Equilibrium."
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         HEADER / NAVIGATION
+    ========================== -->
+    <header class="site-header">
+        <div class="header-container">
+
+            <a href="index.html" class="brand">
+                <div class="brand-icon">⚗</div>
+
+                <div class="brand-text">
+                    <span class="brand-title">Ionic Equilibrium</span>
+                    <span class="brand-subtitle">Interactive Chemistry Laboratory</span>
+                </div>
+            </a>
+
+            <button
+                class="mobile-menu-button"
+                id="mobileMenuButton"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+            >
+                ☰
+            </button>
+
+            <nav class="main-navigation" id="mainNavigation">
+
+                <a href="index.html" class="nav-link active">
+                    Home
+                </a>
+
+                <a href="#acid-bases" class="nav-link">
+                    7.1 Acid &amp; Bases
+                </a>
+
+                <a href="#titration" class="nav-link">
+                    7.2 Titration
+                </a>
+
+                <a href="#solubility" class="nav-link">
+                    7.3 Solubility
+                </a>
+
+                <a href="#practice" class="nav-link">
+                    Practice
+                </a>
+
+                <a href="#progress" class="nav-link">
+                    Progress
+                </a>
+
+                <a href="#tutor" class="nav-link">
+                    AI Tutor
+                </a>
+
+            </nav>
+
+        </div>
+    </header>
+
+
+    <!-- =========================
+         MAIN CONTENT
+    ========================== -->
+    <main>
+
+        <!-- HERO -->
+        <section class="hero-section">
+
+            <div class="hero-container">
+
+                <div class="hero-content">
+
+                    <span class="eyebrow">
+                        CHEMISTRY • EQUILIBRIUM • INTERACTIVE LEARNING
+                    </span>
+
+                    <h1>
+                        Ionic
+                        <span>Equilibrium</span>
+                    </h1>
+
+                    <p class="hero-subtitle">
+                        Interactive Chemistry Laboratory
+                    </p>
+
+                    <p class="hero-description">
+                        Explore acid–base chemistry, titration, and solubility
+                        equilibria through interactive simulations, calculations,
+                        graphs, and guided practice.
+                    </p>
+
+                    <div class="hero-actions">
+
+                        <a href="#modules" class="button button-primary">
+                            Start Learning
+                            <span>→</span>
+                        </a>
+
+                        <a href="#modules" class="button button-secondary">
+                            Explore Modules
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- HERO SCIENCE VISUAL -->
+                <div class="hero-visual">
+
+                    <div class="molecule-orbit orbit-one">
+                        <div class="electron"></div>
+                    </div>
+
+                    <div class="molecule-orbit orbit-two">
+                        <div class="electron"></div>
+                    </div>
+
+                    <div class="molecule-core">
+                        <span>H⁺</span>
+                    </div>
+
+                    <div class="floating-formula formula-one">
+                        pH = −log[H⁺]
+                    </div>
+
+                    <div class="floating-formula formula-two">
+                        K<sub>a</sub>
+                    </div>
+
+                    <div class="floating-formula formula-three">
+                        K<sub>sp</sub>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- MODULES -->
+        <section class="modules-section" id="modules">
+
+            <div class="section-container">
+
+                <div class="section-heading">
+
+                    <span class="section-label">
+                        LEARNING MODULES
+                    </span>
+
+                    <h2>
+                        Explore Ionic Equilibrium
+                    </h2>
+
+                    <p>
+                        Build your understanding from acid–base concepts
+                        through titration and solubility equilibria.
+                    </p>
+
+                </div>
+
+
+                <div class="module-grid">
+
+                    <!-- 7.1 -->
+                    <article class="module-card" id="acid-bases">
+
+                        <div class="module-number">
+                            7.1
+                        </div>
+
+                        <div class="module-icon acid-icon">
+                            H⁺
+                        </div>
+
+                        <div class="module-content">
+
+                            <span class="module-category">
+                                ACID &amp; BASES
+                            </span>
+
+                            <h3>
+                                Acid &amp; Bases
+                            </h3>
+
+                            <p>
+                                Explore Arrhenius and Brønsted–Lowry theories,
+                                conjugate acid–base pairs, pH, weak and strong
+                                acids and bases, salt hydrolysis, and buffers.
+                            </p>
+
+                            <ul class="module-topics">
+                                <li>Acid–base theories</li>
+                                <li>pH calculations</li>
+                                <li>Salt hydrolysis</li>
+                                <li>Buffer systems</li>
+                            </ul>
+
+                            <div class="module-actions">
+
+                                <button
+                                    class="module-button learn-button"
+                                    data-module="acid-bases"
+                                >
+                                    Learn
+                                </button>
+
+                                <button
+                                    class="module-button lab-button"
+                                    data-module="acid-bases"
+                                >
+                                    Virtual Lab
+                                    <span>→</span>
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- 7.2 -->
+                    <article class="module-card" id="titration">
+
+                        <div class="module-number">
+                            7.2
+                        </div>
+
+                        <div class="module-icon titration-icon">
+                            ⚗
+                        </div>
+
+                        <div class="module-content">
+
+                            <span class="module-category">
+                                ACID–BASE TITRATION
+                            </span>
+
+                            <h3>
+                                Acid–Base Titration
+                            </h3>
+
+                            <p>
+                                Perform virtual titrations, investigate
+                                equivalence and end points, and interpret
+                                pH versus titre volume curves.
+                            </p>
+
+                            <ul class="module-topics">
+                                <li>Virtual titration laboratory</li>
+                                <li>Equivalence point</li>
+                                <li>End point</li>
+                                <li>Titration curves</li>
+                            </ul>
+
+                            <div class="module-actions">
+
+                                <button
+                                    class="module-button learn-button"
+                                    data-module="titration"
+                                >
+                                    Learn
+                                </button>
+
+                                <button
+                                    class="module-button lab-button"
+                                    data-module="titration"
+                                >
+                                    Virtual Lab
+                                    <span>→</span>
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- 7.3 -->
+                    <article class="module-card" id="solubility">
+
+                        <div class="module-number">
+                            7.3
+                        </div>
+
+                        <div class="module-icon solubility-icon">
+                            ⇌
+                        </div>
+
+                        <div class="module-content">
+
+                            <span class="module-category">
+                                SOLUBILITY EQUILIBRIA
+                            </span>
+
+                            <h3>
+                                Solubility Equilibria
+                            </h3>
+
+                            <p>
+                                Investigate solubility, molar solubility,
+                                K<sub>sp</sub>, precipitation, the reaction
+                                quotient, and the common-ion effect.
+                            </p>
+
+                            <ul class="module-topics">
+                                <li>Solubility &amp; molar solubility</li>
+                                <li>K<sub>sp</sub> calculations</li>
+                                <li>Q vs K<sub>sp</sub></li>
+                                <li>Common-ion effect</li>
+                            </ul>
+
+                            <div class="module-actions">
+
+                                <button
+                                    class="module-button learn-button"
+                                    data-module="solubility"
+                                >
+                                    Learn
+                                </button>
+
+                                <button
+                                    class="module-button lab-button"
+                                    data-module="solubility"
+                                >
+                                    Virtual Lab
+                                    <span>→</span>
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- LEARNING CYCLE -->
+        <section class="learning-cycle-section">
+
+            <div class="section-container">
+
+                <div class="section-heading">
+
+                    <span class="section-label">
+                        LEARNING CYCLE
+                    </span>
+
+                    <h2>
+                        Learn by Doing
+                    </h2>
+
+                    <p>
+                        Each topic follows a structured learning cycle
+                        that connects concepts with practical chemistry.
+                    </p>
+
+                </div>
+
+
+                <div class="cycle-grid">
+
+                    <div class="cycle-item">
+                        <div class="cycle-number">01</div>
+                        <h3>Learn</h3>
+                        <p>Understand the chemistry and key concepts.</p>
+                    </div>
+
+                    <div class="cycle-item">
+                        <div class="cycle-number">02</div>
+                        <h3>Explore</h3>
+                        <p>Investigate relationships between variables.</p>
+                    </div>
+
+                    <div class="cycle-item">
+                        <div class="cycle-number">03</div>
+                        <h3>Simulate</h3>
+                        <p>Perform experiments in the virtual laboratory.</p>
+                    </div>
+
+                    <div class="cycle-item">
+                        <div class="cycle-number">04</div>
+                        <h3>Calculate</h3>
+                        <p>Apply equations to solve chemistry problems.</p>
+                    </div>
+
+                    <div class="cycle-item">
+                        <div class="cycle-number">05</div>
+                        <h3>Practice</h3>
+                        <p>Test your understanding with questions.</p>
+                    </div>
+
+                    <div class="cycle-item">
+                        <div class="cycle-number">06</div>
+                        <h3>Check</h3>
+                        <p>Review your progress and identify weak areas.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PLACEHOLDER SECTIONS -->
+        <section class="placeholder-section" id="practice">
+
+            <div class="section-container">
+
+                <span class="section-label">COMING NEXT</span>
+
+                <h2>Practice</h2>
+
+                <p>
+                    Practice questions and assessment tools will be added
+                    in a later development stage.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <section class="placeholder-section" id="progress">
+
+            <div class="section-container">
+
+                <span class="section-label">COMING NEXT</span>
+
+                <h2>Progress</h2>
+
+                <p>
+                    Your learning progress and weak areas will be tracked
+                    here once the practice system is implemented.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <section class="placeholder-section" id="tutor">
+
+            <div class="section-container">
+
+                <span class="section-label">COMING NEXT</span>
+
+                <h2>AI Chemistry Tutor</h2>
+
+                <p>
+                    A context-aware chemistry tutor will be added during
+                    a later development stage.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+    <footer class="site-footer">
+
+        <div class="footer-container">
+
+            <div>
+                <strong>Ionic Equilibrium</strong>
+                <p>Interactive Chemistry Laboratory</p>
+            </div>
+
+            <div class="footer-note">
+                Built for chemistry learning.
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+</html>
+```
