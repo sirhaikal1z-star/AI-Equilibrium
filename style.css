@@ -652,6 +652,12 @@ a {
     font-size: 12px;
     font-weight: 700;
 
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+
     transition: 0.2s ease;
 }
 
@@ -1683,7 +1689,14 @@ a {
 
         padding: 30px;
     }
+.module-button {
+    display: inline-flex;
 
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+}
 }
 }
 ```
